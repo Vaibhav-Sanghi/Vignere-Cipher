@@ -6,9 +6,9 @@
 body {
   font-family: 'Roboto Mono', monospace;
   background: radial-gradient(circle, #2f2f6f 1%, #1f1f49);
-  height: 100vh;
   color: #ede9ee;
   margin-inline: auto;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 }
 
 .field {
-  padding-block: 0.75rem 0.5rem;
+  padding-block: 0.75rem 0.65rem;
   font-size: 1.125em;
   display: flex;
   flex-direction: column;
@@ -59,6 +59,7 @@ button {
 .output {
   font-size: 1.5em;
   margin: 0 1.5rem;
+  line-height: 1.4;
 }
 
 .output:not(:empty):before {
