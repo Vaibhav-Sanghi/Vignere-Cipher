@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Fasthand&family=Martian+Mono:wght@100..800&family=Noto+Color+Emoji&family=Ojuju:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Solway:wght@300;400;500;700;800&family=Spinnaker&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Vignère Cipher</h1>
+    <div class="field">
+      <label for="#characterSet">Character Set</label>
+      <input
+        type="text"
+        id="characterSet"
+        placeholder="abcdefghijklmnopqrstuvwxyz"
+      />
+      <p class="info">
+        These are the letters that may be used in your plaintext (message)
+      </p>
+      <p class="red">
+        All further characters used must be from this character set.
+        <br />
+        No repeating characters allowed.
+      </p>
+    </div>
+
+    <div class="field">
+      <label for="#key">Key</label>
+      <input type="text" id="key" />
+      <p class="info">
+        Modifies the Character Set so that the vignère cipher starts with the
+        key (without any characters repeating later)
+      </p>
+      <p class="red">No repeating characters allowed.</p>
+    </div>
+
+    <div class="field">
+      <label for="#message">Message</label>
+      <input type="text" id="message" required />
+      <p class="info">Message to be ciphered.</p>
+    </div>
+
+    <div class="field">
+      <label for="#keyword">Keyword</label>
+      <input type="text" id="keyword" required />
+      <p class="info">Used to cipher the message.</p>
+    </div>
+
+    <button>Cipher message</button>
+    <div class="output"></div>
+
+    <script src="vignere.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: radial-gradient(circle, #2f2f6f 1%, #1f1f49);
+  height: 100vh;
+  line-height: 1.6;
+  color: #ede9ee;
+  width: clamp(50rem, 70vw, 90vw);
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 2.25em;
+  padding-block: 1.5rem 0.5rem;
+  text-align: center;
+}
+
+.field {
+  padding-block: 0.75rem 0.5rem;
+  font-size: 1.125em;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+label::after {
+  content: ':';
+}
+
+.field input {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 1em;
+  background-color: #112a;
+  padding: 0.25em 1rem;
+  border: none;
+  border-radius: 5px;
+  caret-color: white;
+}
+
+.field p {
+  grid-column: 2;
+}
+
+button {
+  background: transparent;
+  margin-block: 1.25rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1.25em;
+  border: none;
+  text-decoration: underline;
+}
+
+.output {
+  font-size: 1.5em;
+  margin: 0 0.5rem;
+}
+
+.output:not(:empty):before {
+  content: 'Encoded cipher: ';
+}
+
+.red {
+  font-style: italic;
+  letter-spacing: 1;
+  color: #e3372b;
+}
+
+.error {
+  outline: 2px dotted #e3372b;
+  outline-offset: 5px;
+}
